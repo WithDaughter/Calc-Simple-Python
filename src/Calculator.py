@@ -1,4 +1,5 @@
-from src.Calculator import calculate
+def calculate(src):
+    return src
 
 
 if __name__ == '__main__':
