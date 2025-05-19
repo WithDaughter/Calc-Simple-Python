@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e593d655-c376-473c-bb48-a0c3b2b88c8b" name="Changes" comment="minus">
+    <list default="true" id="e593d655-c376-473c-bb48-a0c3b2b88c8b" name="Changes" comment="float">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Calculator.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Calculator.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -96,7 +97,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1747683846692</updated>
-      <workItem from="1747683847637" duration="6128000" />
+      <workItem from="1747683847637" duration="7896000" />
     </task>
     <task id="LOCAL-00001" summary="Python 간이 계산기 시작">
       <option name="closed" value="true" />
@@ -146,7 +147,23 @@
       <option name="project" value="LOCAL" />
       <updated>1747689417159</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="divide">
+      <option name="closed" value="true" />
+      <created>1747690046605</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1747690046605</updated>
+    </task>
+    <task id="LOCAL-00008" summary="float">
+      <option name="closed" value="true" />
+      <created>1747690264225</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1747690264225</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,10 +187,12 @@
     <MESSAGE value="multiply" />
     <MESSAGE value="assert" />
     <MESSAGE value="minus" />
-    <option name="LAST_COMMIT_MESSAGE" value="minus" />
+    <MESSAGE value="divide" />
+    <MESSAGE value="float" />
+    <option name="LAST_COMMIT_MESSAGE" value="float" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/SimpleCalculator_Python$Calculator.coverage" NAME="Calculator Coverage Results" MODIFIED="1747690000149" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/SimpleCalculator_Python$Calculator.coverage" NAME="Calculator Coverage Results" MODIFIED="1747691774220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/SimpleCalculator_Python$main.coverage" NAME="main Coverage Results" MODIFIED="1747684755244" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

@@ -39,8 +39,21 @@ def plus(src):
         return minus(src)
 
 
+def parenthesis(src):
+    if '(' in src:
+        start = src.index('(')
+        val = parenthesis(src[start + 1:])
+        return parenthesis(src[0:start] + val)
+    elif ')' in src:
+        end = src.index(')')
+        val = str(plus(src[0:end]))
+        return val + src[end + 1:]
+    else:
+        return src
+
 def calculate(src):
-    val = plus(src)
+    parened = parenthesis(src)
+    val = plus(parened)
     return val
 
 
@@ -49,19 +62,26 @@ if __name__ == '__main__':
         ('1 + 2 + 3', 6),
         ('1 * 2 + 3 * 2 * 2', 14),
         ('2*3*4', 24),
+        ('23-(333 - 330)', 20),
+        ('23-((300 + 30+3) - 330)', 20),
+        ('(20+3)-((300 + 30+3) - (300+30))', 20),
         ('1-2*3', -5),
         ('1-2-3', -4),
         ('6 / 2 - 3', 0),
         ('\t5.3 ', 5.3),
     ]
 
+
     def assert_(src, expected):
         val = calculate(src)
         if val == expected:
-            return
+            print(f'성공: {src} => {expected}')
         else:
             print(f'실패: {src} => {val} != {expected}')
 
 
     for src, expected in tests:
-        assert_(src, expected)
+        try:
+            assert_(src, expected)
+        except Exception as e:
+            print(e)
