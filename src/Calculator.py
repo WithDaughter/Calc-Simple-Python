@@ -21,6 +21,19 @@ def calculate(src):
     return val
 
 if __name__ == '__main__':
-    src = '1*2+3*2*2'
-    val = calculate(src)
-    print(val)
+    tests = [
+        ('1+2+3', 6),
+        ('1*2+3*2*2', 14),
+        ('2*3*4', 24),
+    ]
+
+    def assert_(src, expected):
+        val = calculate(src)
+        if val == expected:
+            return
+        else:
+            print(f'실패: {src} => {val} != {expected}')
+
+
+    for src, expected in tests:
+        assert_(src, expected)
