@@ -10,9 +10,20 @@ def multiply(src):
         return int(src)
 
 
+def minus(src):
+    if '-' in src:
+        tokens = src.split('-')
+        arr = list(map(lambda t: multiply(t), tokens))
+        token = arr[0]
+        return reduce(lambda acc, cur: acc - cur, arr[1:], token)
+    else:
+        return multiply(src)
+
+
+
 def plus(src):
     tokens = src.split('+')
-    arr = map(lambda t: multiply(t), tokens)
+    arr = map(lambda t: minus(t), tokens)
     return reduce(lambda acc, cur: acc + cur, arr, 0)
 
 
@@ -25,6 +36,8 @@ if __name__ == '__main__':
         ('1+2+3', 6),
         ('1*2+3*2*2', 14),
         ('2*3*4', 24),
+        ('1-2*3', -5),
+        ('1-2-3', -4),
     ]
 
     def assert_(src, expected):

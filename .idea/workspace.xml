@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e593d655-c376-473c-bb48-a0c3b2b88c8b" name="Changes" comment="plus">
+    <list default="true" id="e593d655-c376-473c-bb48-a0c3b2b88c8b" name="Changes" comment="assert">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Calculator.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Calculator.py" afterDir="false" />
     </list>
@@ -97,7 +97,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1747683846692</updated>
-      <workItem from="1747683847637" duration="4255000" />
+      <workItem from="1747683847637" duration="5506000" />
     </task>
     <task id="LOCAL-00001" summary="Python 간이 계산기 시작">
       <option name="closed" value="true" />
@@ -123,7 +123,23 @@
       <option name="project" value="LOCAL" />
       <updated>1747686089937</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="multiply">
+      <option name="closed" value="true" />
+      <created>1747688256777</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1747688256777</updated>
+    </task>
+    <task id="LOCAL-00005" summary="assert">
+      <option name="closed" value="true" />
+      <created>1747688331846</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1747688331846</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,10 +160,12 @@
     <MESSAGE value="Python 간이 계산기 시작" />
     <MESSAGE value="calculate 시작" />
     <MESSAGE value="plus" />
-    <option name="LAST_COMMIT_MESSAGE" value="plus" />
+    <MESSAGE value="multiply" />
+    <MESSAGE value="assert" />
+    <option name="LAST_COMMIT_MESSAGE" value="assert" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/SimpleCalculator_Python$Calculator.coverage" NAME="Calculator Coverage Results" MODIFIED="1747687943748" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/SimpleCalculator_Python$Calculator.coverage" NAME="Calculator Coverage Results" MODIFIED="1747689383130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/SimpleCalculator_Python$main.coverage" NAME="main Coverage Results" MODIFIED="1747684755244" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
