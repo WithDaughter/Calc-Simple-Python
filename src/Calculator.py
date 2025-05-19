@@ -1,35 +1,48 @@
 from functools import reduce
 
 
+def divide(src):
+    if '/' in src:
+        tokens = src.split('/')
+        arr = list(map(int, tokens))
+        token = arr[0]
+        return reduce(lambda acc, cur: acc / cur, arr[1:], token)
+    else:
+        return int(src)
+
+
 def multiply(src):
     if '*' in src:
         tokens = src.split('*')
-        arr = map(lambda t: int(t), tokens)
+        arr = map(divide, tokens)
         return reduce(lambda acc, cur: acc * cur, arr, 1)
     else:
-        return int(src)
+        return divide(src)
 
 
 def minus(src):
     if '-' in src:
         tokens = src.split('-')
-        arr = list(map(lambda t: multiply(t), tokens))
+        arr = list(map(multiply, tokens))
         token = arr[0]
         return reduce(lambda acc, cur: acc - cur, arr[1:], token)
     else:
         return multiply(src)
 
 
-
 def plus(src):
-    tokens = src.split('+')
-    arr = map(lambda t: minus(t), tokens)
-    return reduce(lambda acc, cur: acc + cur, arr, 0)
+    if '+' in src:
+        tokens = src.split('+')
+        arr = map(minus, tokens)
+        return reduce(lambda acc, cur: acc + cur, arr, 0)
+    else:
+        return minus(src)
 
 
 def calculate(src):
     val = plus(src)
     return val
+
 
 if __name__ == '__main__':
     tests = [
@@ -38,6 +51,8 @@ if __name__ == '__main__':
         ('2*3*4', 24),
         ('1-2*3', -5),
         ('1-2-3', -4),
+        ('6/2-3', 0),
+        ('5', 5),
     ]
 
     def assert_(src, expected):
