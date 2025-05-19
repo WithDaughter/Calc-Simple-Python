@@ -8,7 +8,7 @@ def divide(src):
         token = arr[0]
         return reduce(lambda acc, cur: acc / cur, arr[1:], token)
     else:
-        return int(src)
+        return float(src)
 
 
 def multiply(src):
@@ -46,13 +46,13 @@ def calculate(src):
 
 if __name__ == '__main__':
     tests = [
-        ('1+2+3', 6),
-        ('1*2+3*2*2', 14),
+        ('1 + 2 + 3', 6),
+        ('1 * 2 + 3 * 2 * 2', 14),
         ('2*3*4', 24),
         ('1-2*3', -5),
         ('1-2-3', -4),
-        ('6/2-3', 0),
-        ('5', 5),
+        ('6 / 2 - 3', 0),
+        ('\t5.3 ', 5.3),
     ]
 
     def assert_(src, expected):
