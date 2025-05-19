@@ -54,8 +54,7 @@ def parenthesis(src):
 
 def calculate(src):
     parened = parenthesis(src)
-    val = plus(parened)
-    return val
+    return plus(parened)
 
 
 if __name__ == '__main__':

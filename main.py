@@ -1,4 +1,4 @@
-from src.Calculator import calculate
+from src.SimpleCalculator import calculate
 
 
 if __name__ == '__main__':
